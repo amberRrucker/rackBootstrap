@@ -1,9 +1,9 @@
 {
-  "name": "angular-seed",
+  "name": "rackBoot",
   "private": true,
   "version": "0.0.0",
-  "description": "A starter project for AngularJS",
-  "repository": "https://github.com/angular/angular-seed",
+  "description": "Rebuilding Rackspace homepage with Bootstrap",
+  "repository": "https://github.com/akbowlin/rackBootstrap",
   "license": "MIT",
   "devDependencies": {
     "bower": "^1.3.1",
