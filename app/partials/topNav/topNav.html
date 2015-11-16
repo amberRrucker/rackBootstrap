@@ -1,0 +1,36 @@
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container visible-md-block visible-lg-block">
+        <a class="navbar-brand">
+            <img alt="Brand" ng-src="../../app/img/logo-nav.png">
+        </a>
+        <ul class="nav navbar-nav pull-right">
+            <li data-ng-repeat="links in navigation">
+                <a href="#">{{links}}</a>
+            </li>
+        </ul>
+    </div>
+    <div class="container visible-xs-block visible-sm-block">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand">
+                <img alt="Brand" ng-src="../../app/img/logo-sm-nav.png">
+            </a>
+        </div>
+
+
+</nav>
+<div class="visible-xs-block visible-sm-block">
+    <div class="collapse navbar-collapse pull-right nav-menu-sm" id="navbar-collapse-1">
+        <ul class="nav navbar-nav pull-right">
+            <li data-ng-repeat="links in navigation">
+                <a href="#">{{links}}</a>
+            </li>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="rackBoot" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Rackspace feat. Bootstrap and Angular</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div class="navbar-fixed-top">
+    <div data-ui-view="header">Loading....</div>
+    <div id="topNav" data-ui-view="topNav"></div>
+</div>
+<div class="container">
+    <div data-ui-view="heroImage"></div>
+    <div data-ui-view="hosting"></div>
+    <div data-ui-view="itSolutions"></div>
+    <div data-ui-view="leadForm"></div>
+    <div data-ui-view="rackspaceSolve"></div>
+    <div data-ui-view="newsEvents"></div>
+    <div data-ui-view="footer"></div>
+</div>
+
+
+<!-- Load angular js and 3rd party -->
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/jquery-unveil/jquery.unveil.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+<!-- Load angular app -->
+<script src="app.js"></script>
+<!-- Load controllers -->
+<script src="partials/header/headerCtrl.js"></script>
+<script src="partials/topNav/topNavCtrl.js"></script>
+<script src="partials/heroImage/heroImageCtrl.js"></script>
+<script src="partials/hosting/hostingCtrl.js"></script>
+<script src="partials/itSolutions/itSolutionsCtrl.js"></script>
+<script src="partials/leadForm/leadFormCtrl.js"></script>
+<script src="partials/rackspaceSolve/rackspaceSolveCtrl.js"></script>
+<script src="partials/newsEvents/newsEventsCtrl.js"></script>
+<script src="partials/footer/footerCtrl.js"></script>
+
+
+
+</body>
+</html>

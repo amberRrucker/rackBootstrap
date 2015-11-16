@@ -1,0 +1,7 @@
+<div class="flex-container">
+    <div class="flex-item text-center" data-ng-repeat="solution in solutions.itSolutions" ng-mouseenter="reloadGif($index)">
+        <img id="solution-{{$index}}" class="animation-icon" data-ng-src="{{solution.icon}}" alt="{{solution.title}}">
+
+        <div>{{solution.title}}</div>
+    </div>
+</div>
