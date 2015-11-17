@@ -1,7 +1,12 @@
-<div class="flex-container">
-    <div class="flex-item text-center" data-ng-repeat="solution in solutions.itSolutions" ng-mouseenter="reloadGif($index)">
-        <img id="solution-{{$index}}" class="animation-icon" data-ng-src="{{solution.icon}}" alt="{{solution.title}}">
+<h2 class="text-center">Need an IT solution or application support?<br>
+    We've got you covered.</h2>
+<div class="flex-feature-container">
+    <div class="flex-feature text-center" data-ng-repeat="solution in solutions.itSolutions">
+        <a href="#" ng-mouseenter="reloadGif($index)">
+            <img id="solution-{{$index}}" class="animation-icon" data-ng-src="{{solution.icon}}"
+                 alt="{{solution.title}}">
 
-        <div>{{solution.title}}</div>
+            <div>{{solution.title}}</div>
+        </a>
     </div>
 </div>

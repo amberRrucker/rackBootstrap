@@ -1,5 +1,24 @@
 /* app css stylesheet */
-body { padding-top: 140px; }
+body {
+  padding-top: 100px;
+  font-size: 16px;
+}
+.margin-bottom-10px {
+  margin-bottom: 10px;
+}
+.margin-10px{
+  margin: 10px 0;
+}
+.btn {
+  border-radius: 0;
+}
+.mobile-show-me {
+  display: none;
+}
+.header {
+  z-index: 1000;
+  background-color: #FFF;
+}
 .menu {
   list-style: none;
   border-bottom: 0.1em solid black;
@@ -32,43 +51,7 @@ body { padding-top: 140px; }
   padding: 0;
 }
 
-@media (max-width: 991px) {
-  .navbar-header {
-    float: none;
-  }
-  .navbar-toggle {
-    display: block;
-  }
-  .navbar-collapse {
-    border-top: 1px solid transparent;
-    box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
-  }
-  .navbar-collapse.collapse {
-    display: none!important;
-  }
-  .navbar-nav {
-    float: none!important;
-    margin: 7.5px -15px;
-  }
-  .navbar-nav>li {
-    float: none;
-  }
-  .navbar-nav>li>a {
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-  .navbar-text {
-    float: none;
-    margin: 15px 0;
-  }
-  /* since 3.1.0 */
-  .navbar-collapse.collapse.in {
-    display: block!important;
-  }
-  .collapsing {
-    overflow: hidden!important;
-  }
-}
+
 
 .nav-menu-sm {
   position: relative;
@@ -82,6 +65,25 @@ body { padding-top: 140px; }
 .nav-menu-sm li a:hover {
   background-color: #222
 }
+
+#hero {
+  position: relative;
+  height: 400px;
+  background: url(http://034d24a88b3e71fd72a6-f083e9a6295a3f0714fa019ffdca65c3.r47.cf1.rackcdn.com/home/homepage-hero-3screen.jpg) center top;
+  padding: 40px !important;
+
+}
+.jumbotron-btn{
+  color: #2a2a2a;
+  letter-spacing: .2rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.jumbotron-btn:hover, .jumbotron-btn:active, .jumbotron-btn:active:focus , .jumbotron-btn:focus, .jumbotron-btn:visited {
+  color: #2a2a2a;
+}
+
 .hosting-panel>div {
   padding: 0 5px;
 }
@@ -90,6 +92,8 @@ body { padding-top: 140px; }
   background-color: #007295;
   min-height: 200px;
   overflow: hidden;
+  border:9px solid #FFF;
+  box-shadow: 0 5px 15px rgba(0,0,0,.35);
 }
 .hosting-panel .panel-body {
   padding: 5px;
@@ -125,8 +129,8 @@ body { padding-top: 140px; }
   z-index: 1;
   position: relative;
   top: -15px;
-  margin: -5px -5px -50px -5px;
-  padding: 20px 0 41px 0;
+  margin: -5px -5px -70px -5px;
+  padding: 20px 0 55px 0;
   background-color: #005e7c;
 }
 .panel-description {
@@ -136,7 +140,7 @@ body { padding-top: 140px; }
 }
 .panel-learn {
   position: relative;
-  bottom: 45px;
+  bottom: 50px;
   z-index: 100;
 }
 .panel-learn a {
@@ -147,10 +151,164 @@ body { padding-top: 140px; }
 .animation-icon {
   height:70px;
 }
-.flex-container {
+.flex-feature-container {
   display: flex;
   flex-direction: row;
 }
-.flex-item {
+.flex-host-container {
+  display: flex;
+  flex-direction: row;
+}
+.flex-feature {
   width: 12.5%;
 }
+.flex-host {
+  width:25%;
+}
+
+#itSolutions {
+  background-color: #f2f5f5;
+  padding: 10px 0;
+}
+
+#leadForm {
+  background-color: #333;
+  padding: 10px 0;
+  color: #FFF;
+}
+#leadForm a {
+  color: #FFF;
+  text-decoration: underline;
+}
+.left-side{
+  border-right: 1px solid #666;
+  min-height:375px;
+}
+
+.lead-form-btn {
+  margin: 25px;
+}
+
+
+
+@media (max-width: 991px) {
+  body { padding-top: 40px; }
+
+  .mobile-hide-me{
+    display: none !important;
+  }
+  .mobile-show-me {
+    display: block;
+  }
+  .navbar-header {
+    float: none;
+  }
+  .navbar-toggle {
+    display: block;
+  }
+  .navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+  .navbar-collapse.collapse {
+    display: none!important;
+  }
+  .navbar-nav {
+    float: none !important;
+    margin: 8px -15px;
+  }
+  .navbar-nav>li {
+    float: none;
+  }
+  .navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .navbar-text {
+    float: none;
+    margin: 15px 0;
+  }
+  /* since 3.1.0 */
+  .navbar-collapse.collapse.in {
+    display: block!important;
+  }
+  .collapsing {
+    overflow: hidden!important;
+  }
+  #hero {
+    position: relative;
+    height: 300px;
+    background: url(http://034d24a88b3e71fd72a6-f083e9a6295a3f0714fa019ffdca65c3.r47.cf1.rackcdn.com/home/homepage-hero-3screen.jpg) right bottom;
+    padding: 10px !important;
+  }
+  .hosting-panel>div {
+    padding: 0 5px;
+  }
+  .hosting-panel .panel {
+    border-radius: 0;
+    background-color: #f2f5f5;
+    min-height: 150px;
+    overflow: hidden;
+    border: none;
+
+  }
+  .hosting-panel .panel-body {
+    padding: 5px;
+  }
+
+
+  .panel-title {
+    color: #333;
+    font-size: x-large;
+    padding-bottom: 15px;
+  }
+
+
+  .panel-bottom{
+    z-index: 1;
+    position: relative;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+  }
+  .panel-description {
+    color: #333;
+    font-size: small;
+    padding: 0 5px;
+  }
+  .panel-learn {
+    position: relative;
+    bottom: 45px;
+    z-index: 100;
+  }
+  .panel-learn a {
+    color: #333;
+    text-decoration: underline;
+    font-size: small;
+  }
+
+
+
+  .flex-host-container {
+    display: flex;
+    flex-direction: column ;
+  }
+  .flex-feature-container {
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: row;
+  }
+  .flex-host {
+    width:100% ;
+  }
+  .flex-feature {
+    width: 25%;
+  }
+  .left-side{
+    border-right: none;
+    min-height:0;
+  }
+
+}
+

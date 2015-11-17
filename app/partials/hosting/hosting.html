@@ -1,14 +1,37 @@
-<div class="clearfix row text-center hosting-panel">
-    <div class="col-md-1"></div>
-    <div data-ng-repeat="panel in hosting.rackspace" class="col-sm-12 col-md-2">
+
+    <div class="mobile-hide-me container flex-host-container text-center">
+        <h2 style="width: 60%">Host with us on our infrastructure</h2>
+        <h2 style="width: 40%">Or through our partners</h2>
+    </div>
+
+<div class="container clearfix text-center flex-host-container hosting-panel">
+    <h2 class="mobile-show-me">Host with us on our infrastructure</h2>
+    <div data-ng-repeat="panel in hosting.rackspace" class="flex-host">
         <div class="panel panel-default">
             <div class="panel-body">
-                <div class="panel-icon">
+                <div class="panel-icon mobile-hide-me">
                     <img data-ng-src="{{panel.icon}}">
                 </div>
                 <div class="panel-title">{{panel.title}}</div>
-                <div class="glyphicon glyphicon-play panel-play"></div>
-                <hr class="panel-divide">
+                <div class="glyphicon glyphicon-play panel-play mobile-hide-me"></div>
+                <hr class="panel-divide mobile-hide-me">
+                <div class="panel-bottom">
+                    <p class="panel-description">{{panel.description}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="panel-learn"><a href="#">Learn More</a></div>
+    </div>
+    <h2 class="mobile-show-me">Or through our partners</h2>
+    <div data-ng-repeat="panel in hosting.partners" class="flex-host">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div class="panel-icon-partners mobile-hide-me">
+                    <img data-ng-src="{{panel.icon}}">
+                </div>
+                <div class="panel-title">{{panel.title}}</div>
+                <div class="glyphicon glyphicon-play panel-play mobile-hide-me"></div>
+                <hr class="panel-divide mobile-hide-me">
                 <div class="panel-bottom">
                     <p class="panel-description">{{panel.description}}</p>
                 </div>
@@ -17,21 +40,4 @@
         <div class="panel-learn"><a href="#">Learn More</a></div>
     </div>
 
-    <div data-ng-repeat="panel in hosting.partners" class="col-sm-12 col-md-2">
-        <div class="panel panel-default">
-            <div class="panel-body">
-                <div class="panel-icon-partners">
-                    <img data-ng-src="{{panel.icon}}">
-                </div>
-                <div class="panel-title">{{panel.title}}</div>
-                <div class="glyphicon glyphicon-play panel-play"></div>
-                <hr class="panel-divide">
-                <div class="panel-bottom">
-                    <p class="panel-description">{{panel.description}}</p>
-                </div>
-            </div>
-        </div>
-        <div class="panel-learn"><a href="#">Learn More</a></div>
-    </div>
-    <div class="col-md-1"></div>
 </div>

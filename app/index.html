@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Rackspace feat. Bootstrap and Angular</title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="app.css">
 </head>
 <body>
@@ -15,15 +16,14 @@
     <div data-ui-view="header">Loading....</div>
     <div id="topNav" data-ui-view="topNav"></div>
 </div>
-<div class="container">
-    <div data-ui-view="heroImage"></div>
-    <div data-ui-view="hosting"></div>
-    <div data-ui-view="itSolutions"></div>
-    <div data-ui-view="leadForm"></div>
-    <div data-ui-view="rackspaceSolve"></div>
-    <div data-ui-view="newsEvents"></div>
-    <div data-ui-view="footer"></div>
-</div>
+
+<div id="heroImage" data-ui-view="heroImage"></div>
+<div id="hosting" data-ui-view="hosting"></div>
+<div id="itSolutions" data-ui-view="itSolutions"></div>
+<div id="leadForm" data-ui-view="leadForm"></div>
+<div id="rackspaceSolve" data-ui-view="rackspaceSolve"></div>
+<div id="newsEvents" data-ui-view="newsEvents"></div>
+<div id="footer" data-ui-view="footer"></div>
 
 
 <!-- Load angular js and 3rd party -->
@@ -45,7 +45,6 @@
 <script src="partials/rackspaceSolve/rackspaceSolveCtrl.js"></script>
 <script src="partials/newsEvents/newsEventsCtrl.js"></script>
 <script src="partials/footer/footerCtrl.js"></script>
-
 
 
 </body>
