@@ -101,6 +101,38 @@ body {
     margin: 0 10px;
 }
 
+#liveChat {
+    position: relative;
+    top: 122px;
+    right: -97%;
+    z-index: 2000;
+    width: 300px;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+#liveChat:hover {
+    right: -80%;
+    cursor: pointer;
+}
+
+#liveChatContainer {
+    height: 100px;
+    background-color: #c40022;
+    padding: 15px 0;
+    color: #FFF;
+}
+
+#liveChatBtn {
+    white-space: nowrap;
+    transform: rotate(-90deg);
+    transform-origin: right;
+    bottom: -53px;
+    left: -12px;
+}
+
 #hero {
     position: relative;
     height: 400px;
