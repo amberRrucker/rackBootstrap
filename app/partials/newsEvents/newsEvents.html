@@ -1,0 +1,14 @@
+<div class="container">
+    <h2 class="text-center">News & Events</h2>
+
+    <div class="col-sm-12 col-md-4 newsContent" data-ng-repeat="content in content.newsEvents">
+        <div class="panel">
+            <div>{{content.type}} / {{content.date}}</div>
+            <h3>{{content.title}}</h3>
+
+            <p>{{content.info}}</p>
+
+            <div class="read-more">READ MORE</div>
+        </div>
+    </div>
+</div>

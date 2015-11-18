@@ -1,0 +1,108 @@
+<div id="redFooter" class="clearfix mobile-hide-me">
+    <div class="container">
+        <div class="col-md-3 vcenter">
+            <div class="col-md-5">We've got<br>your back</div>
+            <div class=" anytime">24x7x365</div>
+        </div>
+        <div class="col-md-3 vcenter">
+            <div class="col-md-2">
+                <span class="fa fa-3x fa-mobile"></span>
+            </div>
+            <div class="col-md-10">
+                <div><a href="tel:+1844-855-5438">1-844-855-5438</a> Sales</div>
+                <div><a href="tel:+1800-961-4454">1-800-961-4454</a> Support</div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="col-md-12 vcenter">
+                <div class="col-md-3">
+                    <span class="fa fa-3x fa-comments"></span>
+                </div>
+                <div class="col-md-9">
+                    <div><a href="#">Live Sales Chat</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="col-md-12 vcenter">
+
+                <div class="col-md-3">
+                    <span class="fa fa-3x fa-envelope-o"></span>
+                </div>
+                <div class="col-md-9">
+                    <div><a href="http://www.rackspace.com/information/contactus#form">Email Us</a></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div id="greyFooter" class="clearfix">
+    <div class="container">
+        <div class="col-md-5">
+            <uib-accordion>
+                <uib-accordion-group heading="ABOUT RACKSPACE" is-open="linksOpen">
+                    <div class="about-links list-unstyled">
+                        <div data-ng-repeat="aboutRackspace in content.aboutRackspace">
+                            <a data-ng-href="{{aboutRackspace.url}}">{{aboutRackspace.name}}</a>
+                        </div>
+                    </div>
+                </uib-accordion-group>
+            </uib-accordion>
+        </div>
+        <div class="col-md-2">
+            <uib-accordion>
+                <uib-accordion-group heading="BLOGS" is-open="linksOpen">
+                    <div>
+                        <div data-ng-repeat="blogs in content.blogs">
+                            <a data-ng-href="{{blogs.url}}">{{blogs.name}}</a>
+                        </div>
+                    </div>
+                </uib-accordion-group>
+            </uib-accordion>
+        </div>
+        <div class="col-md-2">
+            <uib-accordion>
+                <uib-accordion-group heading="SUPPORT" is-open="linksOpen">
+                    <div>
+                        <div data-ng-repeat="support in content.support">
+                            <a data-ng-href="{{support.url}}">{{support.name}}</a>
+                        </div>
+                    </div>
+                </uib-accordion-group>
+            </uib-accordion>
+        </div>
+        <div class="col-md-3 mobile-hide-me">
+            <uib-accordion>
+                <uib-accordion-group heading="OTHER" is-open="linksOpen">
+                    <div>
+                        <div data-ng-repeat="corplink in content.corplink">
+                            <a data-ng-href="{{corplink.url}}">{{corplink.name}}</a>
+                        </div>
+                    </div>
+                </uib-accordion-group>
+            </uib-accordion>
+        </div>
+    </div>
+</div>
+<div id="blackFooter" class="clearfix">
+    <div class="container">
+        <div class="col-xs-6 col-md-3">
+            <label>CHANGE YOUR REGION: <span class="fa fa-flag"></span></label>
+        </div>
+        <div class="col-xs-6 col-md-3">
+            <label for="currency_selector"> CURRENCY:</label>
+
+            <select id="currency_selector">
+                <option value="USD">USD</option>
+                <option value="GBP">GBP</option>
+                <option value="AUD">AUD</option>
+                <option value="EUR">EUR</option>
+            </select>
+        </div>
+        <div class="col-md-3 mobile-hide-me"></div>
+        <div class="col-md-3 pull-right mobile-hide-me">
+            © 2015 Rackspace US, Inc.
+        </div>
+    </div>
+</div>

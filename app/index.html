@@ -6,6 +6,9 @@
     <title>Rackspace feat. Bootstrap and Angular</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon"
+          href="https://752f77aa107738c25d93-f083e9a6295a3f0714fa019ffdca65c3.ssl.cf1.rackcdn.com/icons/favicon.ico"
+          type="image/ico">
     <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.min.css">
@@ -13,7 +16,7 @@
 </head>
 <body>
 <div class="navbar-fixed-top">
-    <div data-ui-view="header">Loading....</div>
+    <div id="header" class="mobile-hide-me " data-ui-view="header">Loading....</div>
     <div id="topNav" data-ui-view="topNav"></div>
 </div>
 
@@ -21,7 +24,7 @@
 <div id="hosting" data-ui-view="hosting"></div>
 <div id="itSolutions" data-ui-view="itSolutions"></div>
 <div id="leadForm" data-ui-view="leadForm"></div>
-<div id="rackspaceSolve" data-ui-view="rackspaceSolve"></div>
+<div class="margin-10px" id="rackspaceSolve" data-ui-view="rackspaceSolve"></div>
 <div id="newsEvents" data-ui-view="newsEvents"></div>
 <div id="footer" data-ui-view="footer"></div>
 
