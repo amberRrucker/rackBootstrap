@@ -18,6 +18,10 @@
                             templateUrl: 'partials/topNav/topNav.html',
                             controller: 'topNavCtrl'
                         },
+                        'liveChat': {
+                            templateUrl: 'partials/liveChat/liveChat.html',
+                            controller: 'liveChatCtrl'
+                        },
                         'heroImage': {
                             templateUrl: 'partials/heroImage/heroImage.html',
                             controller: 'heroImageCtrl'
