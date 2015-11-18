@@ -7,16 +7,31 @@
             <li data-ng-repeat="links in navigation">
                 <a href="#">{{links}}</a>
             </li>
+            <li>
+                <a href="#" data-toggle="collapse"
+                   data-target="#navbar-search">
+                    <span class="fa fa-search"></span>
+                </a>
+            </li>
         </ul>
     </div>
     <div class="container-fluid visible-xs-block visible-sm-block">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
                     data-target="#navbar-collapse-1" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
+            </button>
+            <button type="button" class="navbar-toggle navbar-icons" data-toggle="collapse"
+                    data-target="#navbar-search">
+                <span class="fa fa-search"></span>
+            </button>
+            <button type="button" class="navbar-toggle navbar-icons"><span class="fa fa-comments"></span></button>
+            <button type="button" class="navbar-toggle navbar-icons" data-toggle="collapse"
+                    data-target="#navbar-collapse-2">
+                <span class="fa fa-phone"></span>
             </button>
             <a class="navbar-brand">
                 <img alt="Brand" ng-src="../../app/img/logo-sm-nav.png">
@@ -25,10 +40,39 @@
     </div>
 </nav>
 <div class="visible-xs-block visible-sm-block">
+    <div class="collapse navbar-collapse pull-right nav-menu-sm" id="navbar-search">
+        <ul class="nav navbar-nav pull-right">
+            <li>
+                <form class="form-inline">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <label class="sr-only" for="searchBy"></label>
+                            <input type="search" name="searchBy" id="searchBy" class="form-control"/>
+                            <span class="input-group-btn">
+                                <button id="filter" class="btn btn-default btn-block" onclick="">
+                                    <span class="fa fa-search"></span>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                </form>
+            </li>
+        </ul>
+    </div>
     <div class="collapse navbar-collapse pull-right nav-menu-sm" id="navbar-collapse-1">
         <ul class="nav navbar-nav pull-right">
             <li data-ng-repeat="links in navigation">
                 <a href="#">{{links}}</a>
+            </li>
+        </ul>
+    </div>
+    <div class="collapse navbar-collapse pull-right nav-menu-sm" id="navbar-collapse-2">
+        <ul class="nav navbar-nav pull-right">
+            <li>
+                <a href="#">SUPPORT: 1-800-961-4454</a>
+            </li>
+            <li>
+                <a href="#">SALES: 1-844-857-4878</a>
             </li>
         </ul>
     </div>
